@@ -15,7 +15,10 @@ public class UserServiceImpl implements TempService {
 	WeatherRepository repository;
 	
 	
-	WetherCatche catche = new WetherCatche();
+	@Autowired
+	WetherCatche catche;
+	
+//	WetherCatche catche = new WetherCatche();
 	
 	@Override
 	public City savedata(City city) {

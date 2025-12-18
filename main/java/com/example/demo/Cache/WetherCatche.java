@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.example.demo.WeatherEntity.City;
@@ -52,6 +53,13 @@ public class WetherCatche {
 		City city= Citylist.get(pincdoe);
 		return city;
 		 
+	 }
+	 
+	 
+	 // to clear the data form cache after some time 
+	 public void CacheClear() {
+		 
+		 Citylist.clear();
 	 }
 	
 }
