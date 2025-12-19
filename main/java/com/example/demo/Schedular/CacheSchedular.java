@@ -16,7 +16,7 @@ public class CacheSchedular {
 	@Autowired
 	WetherCatche wetherCatche;
 	
-	 @Scheduled(fixedDelay = 30000)
+	 @Scheduled(initialDelay = 50000,fixedDelay = 50000)
 	 public void m1() {
 		 
 		 System.out.println("data in cache are clear");

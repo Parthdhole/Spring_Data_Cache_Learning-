@@ -8,6 +8,7 @@ import com.example.demo.WeatherEntity.City;
 
 @Repository
 public interface WeatherRepository extends JpaRepository<City,Integer> {
+
 	
 	
 

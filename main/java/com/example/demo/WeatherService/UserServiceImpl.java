@@ -1,5 +1,7 @@
 package com.example.demo.WeatherService;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +22,10 @@ public class UserServiceImpl implements TempService {
 	
 //	WetherCatche catche = new WetherCatche();
 	
+	
+	
+	
+	
 	@Override
 	public City savedata(City city) {
 		return repository.save(city);
@@ -36,6 +42,9 @@ public class UserServiceImpl implements TempService {
 	@Override
 	public City getdata(Integer pincode) {
 		// TODO Auto-generated method stub
+		
+		
+		
 	    System.out.println("Checking data inside cache");
 
 		if(catche.checkdata(pincode)) {
@@ -50,6 +59,7 @@ public class UserServiceImpl implements TempService {
 
 		return city; 
 	}
+
 	
 	
 	
