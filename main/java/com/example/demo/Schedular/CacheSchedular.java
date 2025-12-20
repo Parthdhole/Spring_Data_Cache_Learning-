@@ -21,6 +21,9 @@ public class CacheSchedular {
 		 
 		 System.out.println("data in cache are clear");
 		 wetherCatche.CacheClear();
+		  System.out.println("fetching all data from db");
+		 wetherCatche.fetchdatadb();
+		 
 	 }
 	
 	
